@@ -1,46 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f8f8f8;
+    font-family: 'Courier New', monospace;
+    background-color: #f5deb3;
     margin: 0;
     padding: 0;
-}
-
-.section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    text-align: left;
 }
 
 .contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
 }
 
-.left-details,
-.right-details {
+.contact-details {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
 }
 
-.right-details a {
-    margin: 5px;
+.contact-details a {
     text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
-}
-
-.right-details a:hover {
-    color: #0077b6;
-}
-
-.right-details i {
-    margin-right: 5px;
+    color: black;
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+.content {
+    padding: 20px;
 }
