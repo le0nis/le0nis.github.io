@@ -1,138 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>le0nis.github.io</title>
-    <style>
-        body {
-            background-color: #72A0C1; /* Air superiority blue */
-            color: white; /* Font color is white */
-            font-family: sans-serif;
-            margin: 0;
-        }
-        .section {
-            border-bottom: 2px solid white; /* Updated border color */
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .left, .right {
-            flex-basis: 50%;
-        }
-        .contact, .interests, .education, .career, .skills {
-            white-space: pre-line;
-            overflow-wrap: break-word;
-        }
-        /* Dropdown menu styles */
-        .navbar {
-            overflow: hidden;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-        .navbar .menu-icon {
-            cursor: pointer;
-            font-size: 30px;
-            padding: 10px;
-        }
-        .navbar .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            right: 0;
-            color: black;
-        }
-        .navbar .dropdown-content a {
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        .navbar .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome for Icons -->
+    <title>Leon McGroarty</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-        <div class="dropdown-content" id="menu">
-            <a href="#">Writings</a>
-            <!-- Add more links here -->
-        </div>
-    </div>
     <div class="section">
-        <h2>Contact</h2>
-        <pre class="contact">
-    Leon McGroarty
-    <a href="mailto:Leon.fz.mcg@gmail.com">&#x2709; Leon.fz.mcg@gmail.com</a>
-    <a href="tel:+447922792967">&#x260E; +44 7922792967</a>
-    <a href="https://www.linkedin.com/in/leon-mcgroarty-3b20b7162/">&#x1F465; LinkedIn</a>
-    <a href="https://t.me/l30nis">&#x1F4DC; Telegram @l30nis</a>
-    <a href="https://www.instagram.com/le0nis_/">&#x1F4F7; Instagram @le0nis_</a>
-        </pre>
-    </div>
-        <div class="right">
+        <div class="contact">
+            <div class="left-details">
+                <h1>Contact</h1>
+                <p>Leon McGroarty</p>
+                <p>✉ Leon.fz.mcg@gmail.com</p>
+                <p>☎ +44 7922792967</p>
+            </div>
+            <div class="right-details">
+                <a href="https://www.linkedin.com/in/leonmcgroarty" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://t.me/l30nis" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram @l30nis</a>
+                <a href="https://www.instagram.com/le0nis_" target="_blank"><i class="fab fa-instagram"></i> Instagram @le0nis_</a>
+            </div>
+        </div>
+        <!-- Add Conferences, Skills, Education, and Career Sections Here -->
+        <div class="conferences">
             <h2>Conferences</h2>
-            <pre class="Attended">
-            ● Modular Blockchain Conference, Paris: July 21-22, 2023
-            ● Family Office Summit, Montreux: June 26-27, 2023
-            ● Digital Asset Summit, London: October 17-18, 2022
-            </pre>
+            <ul>
+                <li>Modular Blockchain Conference, Paris: July 21-22, 2023</li>
+                <li>Family Office Summit, Montreux: June 26-27, 2023</li>
+                <li>Digital Asset Summit, London: October 17-18, 2022</li>
+            </ul>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <!-- Your Skills Content Here -->
+            ● Bilingual in English and Russian, conversational French, basic Italian
+            ● Skilled with MS Excel, charting and modeling data
+            ● Able coder in Python, learning Java
+            ● Proficient in Jira and Power BI
+        </div>
+        <div class="education">
+            <h2>Education</h2>
+            <!-- Your Education Content Here -->
+            CFA - Studying towards a Level 1 exam
+            UCL (2019-2022)
+            BA in English and Russian – 2:1
+            Eton College (2014 – 2019)
+            3 A-levels - A in Russian, A in Theology, A in English
+            11 GCSE’s - 9 A*, 2 A
+        </div>
+        <div class="career">
+            <h2>Career</h2>
+            <!-- Your Career Content Here -->
+            November 2022 - Present:
+            Vorboss Ltd - Business Analyst & Revenue Operations Analyst
+            Scaled the commercial aspect of a B2B ISP, provided strategic insights through market reports, and enhanced data analysis using Power BI and Excel. Expanded into Revenue Operations, focusing on data scraping and performance evaluation.
+
+            August 2022 - October 2022:
+            Sextant Advisers - Analyst Internship
+            Contributed to deal analysis and portfolio allocation at a family office, enhancing financial modeling and asset valuation capabilities.
+
+            March 2022 – August 2022:
+            Rebcap Ltd – Investment Analyst
+            Managed portfolios and analyzed market trends at a crypto trading fund. Conducted comprehensive analyses of specific tokens and NFTs, and improved presenting skills through remote work.
+
+            January 2021 – August 2021:
+            Nickel Digital Asset Management - Research Associate (Intern)
+            Developed analytical research and data interpretation skills in the crypto space, created basic APIs using Python, and contributed to sentiment analysis algorithm development.
+
+            June 2018 – February 2021:
+            Tutor for 7+, 11+ and 16+ exams in English, Maths, Sciences, and Latin
+            Enhanced subject comprehension through teaching, emphasizing effective communication and authoritative leadership.
+
+            June 2017 – July 2017:
+            Pinewood Studios - Internship as Script Analysis Assistant
+            Utilized research and analysis skills to fact-check scripts and dissect story themes, delivering accurate results within deadlines.
+
         </div>
     </div>
-    <div class="section">
-        <h2>Skills</h2>
-        <pre class="skills">
-        ● Bilingual in English and Russian, conversational French, basic Italian
-        ● Skilled with MS Excel, charting and modeling data
-        ● Able coder in Python, learning Java
-        ● Proficient in Jira and Power BI
-        </pre>
-    </div>
-    <div class="section">
-        <h2>Education</h2>
-        <pre class="education">
-        CFA - Studying towards a Level 1 exam
-        UCL – 2019-2022    
-        BA in English and Russian – 2:1
-        Eton College – 2014 – 2019
-        A-levels - A in Russian, A in Theology, A in English; 11 GCSE’s Achieved - 9 A*, 2 A
-        </pre>
-    </div>
-    <!-- Career section here -->
-    November 2022 - Present:
-Vorboss Ltd - Business Analyst & Revenue Operations Analyst
-Scaled the commercial aspect of a B2B ISP, provided strategic insights through market reports, and enhanced data analysis using Power BI and Excel. Expanded into Revenue Operations, focusing on data scraping and performance evaluation.
-
-August 2022 - October 2022:
-Sextant Advisers - Analyst Internship
-Contributed to deal analysis and portfolio allocation at a family office, enhancing financial modeling and asset valuation capabilities.
-
-March 2022 – August 2022:
-Rebcap Ltd – Investment Analyst
-Managed portfolios and analyzed market trends at a crypto trading fund. Conducted comprehensive analyses of specific tokens and NFTs, and improved presenting skills through remote work.
-
-January 2021 – August 2021:
-Nickel Digital Asset Management - Research Associate (Intern)
-Developed analytical research and data interpretation skills in the crypto space, created basic APIs using Python, and contributed to sentiment analysis algorithm development.
-
-June 2018 – February 2021:
-Tutor for 7+, 11+ and 16+ exams in English, Maths, Sciences, and Latin
-Enhanced subject comprehension through teaching, emphasizing effective communication and authoritative leadership.
-
-June 2017 – July 2017:
-Pinewood Studios - Internship as Script Analysis Assistant
-Utilized research and analysis skills to fact-check scripts and dissect story themes, delivering accurate results within deadlines.
-    <!-- JavaScript to handle the menu toggle -->
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "block";
-            }
-        }
-    </script>
 </body>
 </html>
