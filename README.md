@@ -2,14 +2,14 @@
 a little vista into the soul.
 
 <pre>
-```plaintext
-**Resume**
+Resume
+ 
 Leon McGroarty 
 Leon.fz.mcg@gmail.com
 +44 7922792967
 https://www.linkedin.com/in/leon-mcgroarty-3b20b7162/
- 
-**Interests:**
+
+Interests:
 ●	· Bilingual in English and Russian, conversational French, basic Italian
 ●	· Passionate about blockchain and the advancement of DeFi and Web 3.0
 ●	· Long time investor in cryptocurrencies
@@ -18,13 +18,14 @@ https://www.linkedin.com/in/leon-mcgroarty-3b20b7162/
 ●	· Proficient in use of Jira and Power BI
 ●	· Passionate writer with experience writing for film
  
-**Education:**
+Education:
 CFA - Studying towards a Level 1 exam 
 UCL –  2019-2022	
 BA in English and Russian – 2:1
 Eton College – 2014 – 2019 
 A-levels  - A in Russian, A in Theology, A in English;  11 GCSE’s Achieved - 9 A*, 2 A
-**Career:**
+
+Career:
 November 2022 - Present:
 Vorboss Ltd - Business Analyst
 Vorboss is a B2B ISP focusing on the greater London area. We began selling to customers around the time I joined. During my first 3 months I assisted in scaling the commercial aspect of the business, creating reports on the existing market, collating and analysing information across the company for board meetings and aiding in the general strategic outlook of the company. I continue to excel in this capacity but have now also expanded to Revenue Operations Analyst where I scrape data from our CRM platforms and utilising Power BI and Excel scrutinise performance and existing strategy. 
