@@ -38,8 +38,8 @@ body {
 }
 
 .content ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc; /* Changed to add bullet points back */
+    padding-left: 20px; /* Added indentation for the bullet points */
 }
 
 .content li {
@@ -74,7 +74,8 @@ body {
 
 /* Ensure that the design is functional and aesthetically pleasing on all devices */
 @media screen and (max-width: 768px) {
-    /* Responsive design adjustments */
-}
-
+    .contact-details {
+        flex-direction: column;
+    }
+    /* Additional responsive design adjustments if needed */
 }
