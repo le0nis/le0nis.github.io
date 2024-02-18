@@ -1,13 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Select the hamburger menu icon
     const menuIcon = document.querySelector('.hamburger-menu');
+    // Select the navigation menu
     const navMenu = document.querySelector('.nav-menu');
 
+    // Add click event listener to the hamburger menu icon
     menuIcon.addEventListener('click', function() {
-        navMenu.classList.toggle('hidden');
-        if (navMenu.classList.contains('hidden')) {
-            navMenu.style.transform = 'translateX(100%)';
-        } else {
-            navMenu.style.transform = 'translateX(0)';
-        }
+        // Toggle the 'active' class to show or hide the menu
+        navMenu.classList.toggle('active');
     });
 });
