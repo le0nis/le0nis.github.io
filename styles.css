@@ -2,57 +2,62 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Dark background */
-    color: #75aadb; /* Light blue text for a futuristic feel */
+    background-color: #121212;
+    color: #75aadb;
     text-align: center;
 }
 
+/* Styling for the contact and menu sections */
 .container {
-    width: 100%;
-    padding-top: 20px; /* Add padding at the top */
+    max-width: 800px; /* Limits the width of the container */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
 }
 
 .contact h1 {
-    margin: 0;
-    padding: 20px 0; /* Add some padding at the top and bottom */
+    margin-bottom: 1rem;
 }
 
 .contact-details {
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Wrap items if not enough space */
-    gap: 10px; /* Adds a gap between buttons */
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.contact-details a {
-    background-color: #1e1e1e; /* Slightly lighter dark background for buttons */
-    color: #75aadb; /* Light blue text */
-    padding: 15px 30px; /* Adjusted padding */
-    margin: 5px; /* Smaller margin */
+/* Updated button styling */
+.contact-details a, .menu-content a {
+    background-color: #1e1e1e;
+    color: #75aadb;
+    padding: 10px 20px;
+    margin: 5px;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
+    display: inline-block; /* Allows for better control over button width */
+    max-width: 160px; /* Maximum button width */
+    font-size: 0.9rem;
 }
 
-.contact-details a:hover {
-    background-color: #292929; /* Hover effect for buttons */
-    color: #ffffff; /* Change text color on hover for better visibility */
+.contact-details a:hover, .menu-content a:hover {
+    background-color: #292929;
+    color: #ffffff;
 }
 
-/* New navigation buttons */
-.menu-content a.nav-button {
-    background-color: #2a2a2a; /* Slightly different shade than the contact buttons */
-    color: #75aadb; /* Light blue text */
-    padding: 40px; /* 2x bigger than contact buttons */
-    margin: 10px 0; /* Vertical margin only */
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    display: block; /* Each button on a new line */
-    font-size: larger; /* Larger font size for better readability */
+/* Font Awesome icon styling */
+.contact-details i {
+    margin-right: 8px;
 }
 
-.menu-content a.nav-button:hover {
-    background-color: #333333; /* Slightly lighter on hover */
-    color: #ffffff; /* Change text color on hover for better visibility */
+/* Menu content styling */
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the buttons */
+    margin-top: 2rem;
+}
+
+.menu-content a {
+    padding: 10px 15px; /* Smaller padding for a tighter 'bubble' */
+    margin: 10px 0; /* Spacing out the buttons */
+    font-size: 1.1rem; /* Larger font size for readability */
 }
