@@ -1,6 +1,16 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background for a futuristic theme */
+    color: #75aadb; /* Light blue text for a futuristic feel */
+    text-align: center;
+}
+
+/* Navigation Bar */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Aligns nav links to the right */
     align-items: center;
     position: fixed;
     top: 0;
@@ -12,23 +22,26 @@
     z-index: 1000; /* Keeps navbar above other content */
 }
 
-.name, .nav-links a {
+.name {
     color: #75aadb;
     text-decoration: none;
     padding: 20px;
+    margin-right: auto; /* Pushes nav links to the right */
 }
 
-.nav-links {
-    display: flex;
-    justify-content: flex-end; /* Aligns nav links to the right */
+.nav-links a {
+    color: #75aadb;
+    text-decoration: none;
+    padding: 20px;
 }
 
 .nav-links a:hover {
     color: #ffffff;
 }
 
+/* Header styling */
 .header h1 {
-    margin-top: 60px; /* Offset for fixed navbar */
+    margin-top: 80px; /* Offset for fixed navbar, adjust as needed */
     font-size: 2.5rem;
     font-weight: normal;
 }
@@ -36,7 +49,7 @@
 /* Container for content below navbar */
 .container {
     max-width: 800px; /* Limits the width */
-    margin: 80px auto 0; /* Adds space at the top for navbar, auto centers horizontally */
+    margin: 100px auto 0; /* Adds space at the top for navbar, auto centers horizontally */
     padding: 20px;
 }
 
@@ -76,23 +89,27 @@
     margin-right: 8px;
 }
 
+/* About section styling */
+/* About Section Styling */
 .about-section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Vertically centers content in the section */
+    justify-content: flex-start; /* Aligns content to the left */
     padding: 100px 20px;
     background: linear-gradient(
             to right,
-            rgba(18, 18, 18, 0.7),
-            rgba(18, 18, 18, 0.3)
+            rgba(18, 18, 18, 0.7) 50%,
+            rgba(18, 18, 18, 0.3) 100%
         ),
-        url('path_to_your_image.jpg') no-repeat right center / cover; /* Adjust as needed */
+        url('https://media.licdn.com/dms/image/D4E03AQGKpqkS9eOO0Q/profile-displayphoto-shrink_400_400/0/1697026826375?e=1714003200&v=beta&t=Y3TencpxF3E38ezju84I_Ed5y2IH_o0BSM50HFB_ijU') no-repeat right center / cover;
     color: white;
-    min-height: 400px; /* Adjust as needed */
+    min-height: 600px; /* Adjust this value as needed */
 }
 
 .about-content {
-    max-width: 50%;
+    flex: 1; /* Allows content to grow and take up available space */
+    padding-right: 20px; /* Adds spacing between text and image */
+    max-width: 50%; /* Limits width of the text content */
 }
 
 .profile-picture {
@@ -100,7 +117,12 @@
     height: auto;
     border-radius: 50%;
     opacity: 0.8; /* Blends the image into the background */
+    margin-left: auto; /* Pushes the image to the right */
 }
+
+/* Additional styles for other sections */
+/* ... Your other styles ... */
+
 /* Styling for the vertical menu under the contact section */
 .menu-content {
     display: flex;
