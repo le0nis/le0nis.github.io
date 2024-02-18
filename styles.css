@@ -51,18 +51,25 @@ body, html {
     color: #75aadb; /* Light blue icon */
 }
 
+/* Initially off-screen */
 .nav-menu {
     position: fixed;
     top: 0;
     right: 0;
-    width: 0;
+    width: 250px; /* Set the width of the menu */
+    transform: translateX(100%); /* Start off-screen */
     height: 100%;
     background-color: rgba(18, 18, 18, 0.95); /* Dark background with slight transparency */
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: transform 0.5s; /* Smooth transition for the transform property */
     display: flex;
     flex-direction: column;
     color: #75aadb; /* Light blue text for the menu */
+}
+
+/* When menu is active, bring it on-screen */
+.nav-menu.active {
+    transform: translateX(0);
 }
 
 .nav-menu a {
@@ -76,13 +83,4 @@ body, html {
 
 .nav-menu a:hover {
     color: #ffffff; /* Brighter color for hover state */
-}
-
-.hidden {
-    width: 0;
-}
-
-/* When menu is active */
-.nav-menu.active {
-    width: 250px; /* Menu width when active */
 }
