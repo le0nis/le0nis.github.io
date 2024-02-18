@@ -1,81 +1,59 @@
-body {
-    font-family: "Arial", sans-serif;
-    background-color: #fafafa; /* Light gray for a soft look */
-    color: #333;
-    line-height: 1.6;
+body, html {
     margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #101010; /* Dark background for a futuristic look */
+    color: #ffffff; /* Light text for contrast */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
     padding: 20px;
 }
 
-.contact {
-    text-align: left;
-}
-
-.contact h1 {
-    font-family: "Courier New", Courier, monospace; /* Typewriter aesthetic */
-    margin-bottom: 20px;
-}
-
-.contact-details {
-    display: flex;
-    justify-content: space-between;
+h1 {
+    font-size: 2em;
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .contact-details a {
+    display: block;
+    margin: 10px 0;
+    color: #4CAF50; /* Bright accent color */
     text-decoration: none;
-    color: #333;
-    margin: 0 10px;
-    transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
-.contact-details a:hover {
-    color: #555; /* Subtle hover effect */
+.nav-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #202020; /* Slightly lighter dark shade for the menu */
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000; /* Ensure menu is above other content */
 }
 
-.content {
-    text-align: left;
+.nav-menu a {
+    display: block;
+    padding: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
 }
 
-.content ul {
-    list-style-type: disc; /* Changed to add bullet points back */
-    padding-left: 20px; /* Added indentation for the bullet points */
+.hamburger-menu {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    color: #ffffff; /* Icon color */
+    font-size: 24px; /* Icon size */
 }
 
-.content li {
-    margin-bottom: 10px;
-}
-
-.content h2 {
-    font-family: "Courier New", Courier, monospace;
-    margin: 20px 0;
-}
-
-/* Additional styles for dropdown and responsive design */
-
-/* ... (include your dropdown and responsive design styles here) ... */
-
-/* Add typewriter effect for specific elements if needed */
-@keyframes typewriter {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-.typewriter h2 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid black; /* The typewriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-        typewriter 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
-}
-
-/* Ensure that the design is functional and aesthetically pleasing on all devices */
-@media screen and (max-width: 768px) {
-    .contact-details {
-        flex-direction: column;
-    }
-    /* Additional responsive design adjustments if needed */
+.hidden {
+    display: none;
 }
