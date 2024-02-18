@@ -1,3 +1,4 @@
+/* Main Body and HTML Styling */
 body, html {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body, html {
     text-align: center;
 }
 
+/* Container for Centering Content */
 .container {
     height: 100vh; /* Full height */
     display: flex;
@@ -18,15 +20,12 @@ body, html {
     justify-content: center;
 }
 
-.contact {
-    margin: 0;
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* Contact Header Styles */
+.contact h1 {
+    margin-bottom: 2rem; /* Adjust as needed for more space */
 }
 
+/* Contact Details Styling */
 .contact-details a {
     background-color: #1e1e1e; /* Slightly lighter dark background for buttons */
     color: #75aadb; /* Light blue text */
@@ -37,50 +36,27 @@ body, html {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Hover Effects for Contact Details */
 .contact-details a:hover {
     background-color: #292929; /* Hover effect for buttons */
     color: #ffffff; /* Change text color on hover for better visibility */
 }
 
-.hamburger-menu {
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    cursor: pointer;
-    z-index: 100; /* Ensure it's above other content */
-    color: #75aadb; /* Light blue icon */
-}
-
-/* Initially off-screen */
-.nav-menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 250px; /* Set the width of the menu */
-    transform: translateX(100%); /* Start off-screen */
-    height: 100%;
-    background-color: rgba(18, 18, 18, 0.95); /* Dark background with slight transparency */
-    overflow-x: hidden;
-    transition: transform 0.5s; /* Smooth transition for the transform property */
-    display: flex;
-    flex-direction: column;
-    color: #75aadb; /* Light blue text for the menu */
-}
-
-/* When menu is active, bring it on-screen */
-.nav-menu.active {
-    transform: translateX(0);
-}
-
-.nav-menu a {
-    padding: 10px 15px;
+/* Menu Content Styling */
+.menu-content a.nav-button {
+    background-color: #2a2a2a; /* Slightly different shade than the contact buttons */
+    color: #75aadb; /* Light blue text */
+    padding: 40px; /* 2x bigger than contact buttons */
+    margin: 10px;
     text-decoration: none;
-    font-size: 22px;
-    color: #75aadb; /* Light blue links */
-    display: block;
-    transition: color 0.3s;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: block; /* Ensures each link is on a new line */
+    font-size: larger; /* Larger font size for better readability */
 }
 
-.nav-menu a:hover {
-    color: #ffffff; /* Brighter color for hover state */
+/* Hover Effects for Menu Buttons */
+.menu-content a.nav-button:hover {
+    background-color: #333333; /* Slightly lighter on hover */
+    color: #ffffff; /* Change text color on hover for better visibility */
 }
