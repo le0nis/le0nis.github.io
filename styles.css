@@ -106,3 +106,54 @@ body, html {
     width: 50%; /* Makes buttons wider but not full-width */
     box-sizing: border-box; /* Ensures padding doesn't add to the set width */
 }
+
+.interests-skills {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.education {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.career-overview h2 {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.job {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.job-description {
+    list-style-type: none; /* Hides bullet points */
+    padding: 0;
+}
+
+.job-description li {
+    margin-top: 10px; /* Adds space between job roles */
+}
+
+/* Styling for book list with left-aligned images and right-aligned titles */
+.book-list {
+    padding: 20px;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.book-cover {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.book-info p {
+    margin: 0;
+}
