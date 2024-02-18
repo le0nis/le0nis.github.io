@@ -1,61 +1,57 @@
-/* Main Body and HTML Styling */
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: 'Arial', sans-serif;
     background-color: #121212; /* Dark background */
     color: #75aadb; /* Light blue text for a futuristic feel */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
 }
 
-/* Container for Centering Content */
 .container {
-    height: 100vh; /* Full height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    padding-top: 20px; /* Add padding at the top */
 }
 
-/* Contact Header Styles */
 .contact h1 {
-    margin-bottom: 2rem; /* Adjust as needed for more space */
+    margin: 0;
+    padding: 20px 0; /* Add some padding at the top and bottom */
 }
 
-/* Contact Details Styling */
+.contact-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap items if not enough space */
+    gap: 10px; /* Adds a gap between buttons */
+}
+
 .contact-details a {
     background-color: #1e1e1e; /* Slightly lighter dark background for buttons */
     color: #75aadb; /* Light blue text */
-    padding: 20px;
-    margin: 10px;
+    padding: 15px 30px; /* Adjusted padding */
+    margin: 5px; /* Smaller margin */
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hover Effects for Contact Details */
 .contact-details a:hover {
     background-color: #292929; /* Hover effect for buttons */
     color: #ffffff; /* Change text color on hover for better visibility */
 }
 
-/* Menu Content Styling */
+/* New navigation buttons */
 .menu-content a.nav-button {
     background-color: #2a2a2a; /* Slightly different shade than the contact buttons */
     color: #75aadb; /* Light blue text */
     padding: 40px; /* 2x bigger than contact buttons */
-    margin: 10px;
+    margin: 10px 0; /* Vertical margin only */
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    display: block; /* Ensures each link is on a new line */
+    display: block; /* Each button on a new line */
     font-size: larger; /* Larger font size for better readability */
 }
 
-/* Hover Effects for Menu Buttons */
 .menu-content a.nav-button:hover {
     background-color: #333333; /* Slightly lighter on hover */
     color: #ffffff; /* Change text color on hover for better visibility */
