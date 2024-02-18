@@ -1,48 +1,45 @@
 body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: 'Arial', sans-serif;
-    background-color: #101010; /* Dark background for a futuristic look */
-    color: #ffffff; /* Light text for contrast */
+    background-color: #121212; /* Dark background */
+    color: #75aadb; /* Light blue text for a futuristic feel */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-h1 {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
+.contact {
+    margin: 0;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact-details a {
-    display: block;
-    margin: 10px 0;
-    color: #4CAF50; /* Bright accent color */
-    text-decoration: none;
-}
-
-.nav-menu {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #202020; /* Slightly lighter dark shade for the menu */
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-    z-index: 1000; /* Ensure menu is above other content */
-}
-
-.nav-menu a {
-    display: block;
+    background-color: #1e1e1e; /* Slightly lighter dark background for buttons */
+    color: #75aadb; /* Light blue text */
     padding: 20px;
-    color: #ffffff;
+    margin: 10px;
     text-decoration: none;
-    border-bottom: 1px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-details a:hover {
+    background-color: #292929; /* Hover effect for buttons */
+    color: #ffffff; /* Change text color on hover for better visibility */
 }
 
 .hamburger-menu {
@@ -50,10 +47,42 @@ h1 {
     right: 20px;
     top: 20px;
     cursor: pointer;
-    color: #ffffff; /* Icon color */
-    font-size: 24px; /* Icon size */
+    z-index: 100; /* Ensure it's above other content */
+    color: #75aadb; /* Light blue icon */
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.95); /* Dark background with slight transparency */
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    color: #75aadb; /* Light blue text for the menu */
+}
+
+.nav-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #75aadb; /* Light blue links */
+    display: block;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ffffff; /* Brighter color for hover state */
 }
 
 .hidden {
-    display: none;
+    width: 0;
+}
+
+/* When menu is active */
+.nav-menu.active {
+    width: 250px; /* Menu width when active */
 }
