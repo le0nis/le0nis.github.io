@@ -33,28 +33,29 @@ body, html {
     gap: 10px; /* Space between items */
 }
 
-/* Button styling for contact details and menu */
 .contact-details a, .menu-content a {
     background-color: #1e1e1e;
     color: #75aadb;
-    padding: 10px 20px;
+    padding: 10px; /* Reduced padding */
     margin: 5px;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    display: inline-block;
-    max-width: 160px; /* Ensures uniform width */
-    font-size: 0.9rem; /* Text size */
+    display: inline-flex; /* Changed to inline-flex to center the icon and text */
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+    width: auto; /* Adjusted from max-width to width and set to auto */
+    font-size: 0.9rem; /* You can increase this if needed */
 }
 
+.contact-details i {
+    margin-right: 8px;
+}
+
+/* Adjust the hover effect as well */
 .contact-details a:hover, .menu-content a:hover {
     background-color: #292929;
     color: #ffffff;
-}
-
-/* Styling for Font Awesome icons */
-.contact-details i {
-    margin-right: 8px;
 }
 
 /* About section styling */
@@ -97,14 +98,6 @@ body, html {
     justify-content: flex-start; /* Aligns the book image and info to the start (left) */
 }
 
-.profile-picture {
-    max-width: 40%; /* Adjust as needed */
-    height: auto;
-    border-radius: 50%;
-    opacity: 0.8; /* Blends the image into the background */
-    margin-left: auto; /* Pushes the image to the right */
-}
-
 /* Additional styles for other sections */
 /* ... Your other styles ... */
 
@@ -139,9 +132,10 @@ body, html {
     padding-left: 20px;
 }
 
-.job {
-    text-align: left;
-    padding-left: 20px;
+.job em {
+    text-decoration: underline; /* This will underline the job titles */
+    padding-left: 20px; /* Adds padding to the left of job titles */
+    display: inline-block; /* Allows padding to affect inline elements */
 }
 
 .job-description {
