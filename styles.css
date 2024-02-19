@@ -2,169 +2,90 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Dark background for a futuristic theme */
-    color: #75aadb; /* Light blue text for a futuristic feel */
-    text-align: center;
+    background-color: #121212; /* Dark background for a modern theme */
+    color: #75aadb; /* Light blue text for a modern feel */
 }
 
-/* Header styling */
-.header h1 {
-    margin-top: 80px; /* Offset for fixed navbar, adjust as needed */
-    font-size: 2.5rem;
-    font-weight: normal;
-}
-
-/* Container for content below navbar */
-.container {
-    max-width: 800px; /* Limits the width */
-    margin: 100px auto 0; /* Adds space at the top for navbar, auto centers horizontally */
-    padding: 20px;
-}
-
-.contact h1, .about-section h2 {
-    margin-bottom: 1rem;
-}
-
-/* Flexbox for contact details to align items */
-.contact-details {
+/* Navigation bar styling */
+nav.contact-nav {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px; /* Space between items */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+    padding: 10px 0;
+    background-color: #1e1e1e; /* Darker background for nav bar */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
-.contact-details a, .menu-content a {
-    background-color: #1e1e1e;
+nav.contact-nav a {
     color: #75aadb;
-    padding: 10px; /* Reduced padding */
-    margin: 5px;
     text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px; /* Add margin to space out the links */
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    display: inline-flex; /* Changed to inline-flex to center the icon and text */
-    align-items: center; /* Vertical alignment */
-    justify-content: center; /* Horizontal alignment */
-    width: auto; /* Adjusted from max-width to width and set to auto */
-    font-size: 0.9rem; /* You can increase this if needed */
 }
 
-.contact-details i {
-    margin-right: 8px;
-}
-
-/* Adjust the hover effect as well */
-.contact-details a:hover, .menu-content a:hover {
+nav.contact-nav a:hover {
     background-color: #292929;
     color: #ffffff;
+}
+
+/* Main content container styling */
+.container {
+    margin-top: 60px; /* Space for fixed navbar */
+    padding: 20px;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: auto;
 }
 
 /* About section styling */
 .about-section {
     display: flex;
-    justify-content: flex-end; /* Aligns the child elements to the right */
-    padding: 100px 20px;
-    background: linear-gradient(
-            to left, /* Gradient going left to fade out the image */
-            rgba(18, 18, 18, 0.7) 50%,
-            rgba(18, 18, 18, 0.3) 100%
-        ),
-        url('https://media.licdn.com/dms/image/D4E03AQGKpqkS9eOO0Q/profile-displayphoto-shrink_400_400/0/1697026826375?e=1714003200&v=beta&t=Y3TencpxF3E38ezju84I_Ed5y2IH_o0BSM50HFB_ijU') no-repeat right center / cover;
-    color: white;
-    min-height: 600px;
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: center; /* Center align items */
+    text-align: center;
+    padding: 50px 20px;
 }
 
-/* Ensure the text content is on the left */
-.about-content {
-    align-self: flex-start; /* Aligns content to the top */
-    position: absolute; /* Position it absolutely within the relative parent */
-    left: 20px; /* Adjust as needed */
-    max-width: 50%; /* Limits width of the text content */
+/* Image styling */
+.image-container img {
+    max-width: 100%; /* Ensure image is responsive and does not overflow */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-top: 20px; /* Add space between text and image */
 }
 
-/* For the resume and recent-reads, make sure they are left-aligned */
-.resume-container, .recent-reads-container {
-    text-align: left;
+/* Responsive design adjustments */
+@media (min-width: 768px) {
+    .about-section {
+        flex-direction: row; /* Align side-by-side for larger screens */
+        justify-content: space-evenly; /* Even space between text and image */
+        text-align: left;
+    }
+
+    .about-section h1, .about-section p {
+        max-width: 50%; /* Limit the width of the text */
+    }
+
+    .image-container img {
+        max-width: 40%; /* Adjust image width as needed */
+    }
 }
 
-/* Style adjustments for the resume and recent reads list items */
-.resume-container li, .recent-reads-container li {
-    text-align: left;
-    list-style-type: none; /* Removes bullet points */
-    margin-bottom: 10px; /* Adds a bottom margin for spacing */
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1e1e1e; /* Match nav bar color */
+    color: #75aadb;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Ensure book covers on the recent reads page are left-aligned */
-.book {
-    justify-content: flex-start; /* Aligns the book image and info to the start (left) */
-}
-
-/* Additional styles for other sections */
-/* ... Your other styles ... */
-
-/* Styling for the vertical menu under the contact section */
-.menu-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Aligns buttons in the center */
-    margin-top: 2rem; /* Space from the contact details */
-}
-
-.menu-content a {
-    padding: 20px 30px; /* Increased padding for larger 'bubble' effect */
-    margin: 10px 0; /* Space between buttons */
-    font-size: 1.1rem; /* Larger text for readability */
-    width: 50%; /* Makes buttons wider but not full-width */
-    box-sizing: border-box; /* Ensures padding doesn't add to the set width */
-}
-
-.interests-skills {
-    text-align: left;
-    padding-left: 20px;
-}
-
-.education {
-    text-align: left;
-    padding-left: 20px;
-}
-
-.career-overview h2 {
-    text-align: left;
-    padding-left: 20px;
-}
-
-.job em {
-    text-decoration: underline; /* This will underline the job titles */
-    padding-left: 20px; /* Adds padding to the left of job titles */
-    display: inline-block; /* Allows padding to affect inline elements */
-}
-
-.job-description {
-    list-style-type: none; /* Hides bullet points */
-    padding: 0;
-}
-
-.job-description li {
-    margin-top: 10px; /* Adds space between job roles */
-}
-
-/* Styling for book list with left-aligned images and right-aligned titles */
-.book-list {
-    padding: 20px;
-}
-
-.book {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.book-cover {
-    width: 150px;
-    height: 220px;
-    object-fit: cover;
-    margin-right: 20px;
-}
-
-.book-info p {
+footer p {
     margin: 0;
 }
