@@ -1,91 +1,69 @@
-body, html {
+body {
+    background-color: #00ffff; /* Aqua background */
+    color: #333;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Dark background for a modern theme */
-    color: #75aadb; /* Light blue text for a modern feel */
 }
 
-/* Navigation bar styling */
-nav.contact-nav {
-    display: flex;
-    justify-content: center; /* Center items horizontally */
-    flex-wrap: wrap; /* Allow items to wrap on small screens */
-    padding: 10px 0;
-    background-color: #1e1e1e; /* Darker background for nav bar */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
-
-nav.contact-nav a {
-    color: #75aadb;
-    text-decoration: none;
-    padding: 10px 15px;
-    margin: 5px; /* Add margin to space out the links */
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav.contact-nav a:hover {
-    background-color: #292929;
-    color: #ffffff;
-}
-
-/* Main content container styling */
 .container {
-    margin-top: 60px; /* Space for fixed navbar */
+    max-width: 900px;
+    margin: 0 auto;
     padding: 20px;
-    max-width: 1200px; /* Adjust max-width as needed */
-    margin: auto;
 }
 
-/* About section styling */
-.about-section {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically on small screens */
-    align-items: center; /* Center align items */
+header {
     text-align: center;
-    padding: 50px 20px;
+    margin-bottom: 30px;
 }
 
-/* Image styling */
-.image-container img {
-    max-width: 100%; /* Ensure image is responsive and does not overflow */
-    height: auto;
-    border-radius: 10px; /* Rounded corners for the image */
-    margin-top: 20px; /* Add space between text and image */
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
-/* Responsive design adjustments */
-@media (min-width: 768px) {
-    .about-section {
-        flex-direction: row; /* Align side-by-side for larger screens */
-        justify-content: space-evenly; /* Even space between text and image */
-        text-align: left;
-    }
-
-    .about-section h1, .about-section p {
-        max-width: 50%; /* Limit the width of the text */
-    }
-
-    .image-container img {
-        max-width: 40%; /* Adjust image width as needed */
-    }
+.contact-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-/* Footer styling */
+.contact-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+.about-section, .portfolio-section, .blog-section {
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.about-text {
+    text-align: center;
+}
+
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #1e1e1e; /* Match nav bar color */
-    color: #75aadb;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #f1f1f1;
+    margin-top: 30px;
 }
 
 footer p {
     margin: 0;
+    color: #333;
 }
+
