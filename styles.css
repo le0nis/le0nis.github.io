@@ -1,15 +1,20 @@
 body {
-    background-color: #00ffff; /* Aqua background */
-    color: #333;
+    background-color: #001f3f; /* Navy background */
+    color: #ddd; /* Light text color for contrast */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(135deg, #001f3f 25%, #001633 25%, #001633 50%, #001f3f 50%, #001f3f 75%, #001633 75%, #001633 100%);
+    background-size: 56.57px 56.57px; /* Metallic-like pattern */
 }
 
 .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slight transparency for a polished look */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
 header {
@@ -20,24 +25,58 @@ header {
 header h1 {
     font-size: 2.5em;
     margin: 0;
+    color: #fff; /* White text for contrast */
 }
 
 .contact-nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 15px; /* Increased gap for spacing */
+    margin-top: 15px;
 }
 
 .contact-nav a {
     text-decoration: none;
-    color: #333;
-    font-size: 1em;
+    color: #ccc; /* Light gray for a softer look */
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.contact-nav a:hover {
+    color: #00aaff; /* Highlight color on hover */
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: #003366; /* Darker navy for hero section */
+    border-radius: 10px;
+    color: #fff;
+}
+
+.hero-section .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: #007acc;
 }
 
 .about-section, .portfolio-section, .blog-section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    background-color: #001a33; /* Slightly different navy for section contrast */
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .profile-image {
@@ -49,21 +88,23 @@ header h1 {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    border: 4px solid #00aaff; /* Added border for emphasis */
 }
 
 .about-text {
     text-align: center;
+    color: #ddd; /* Light text color */
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #f1f1f1;
+    background-color: #001f3f; /* Same navy as body background */
     margin-top: 30px;
 }
 
 footer p {
     margin: 0;
-    color: #333;
+    color: #ccc; /* Light gray for contrast */
 }
 
