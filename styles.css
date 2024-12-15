@@ -58,8 +58,8 @@ header h1 {
 
 .profile-image img {
     border-radius: 50%; /* Circular image */
-    width: 165px; /* Increased size by 10% */
-    height: 165px; /* Ensure the height matches the width for a perfect circle */
+    width: 200px; /* Increased size */
+    height: 200px; /* Ensure the height matches the width for a perfect circle */
     border: 4px solid #00aaff; /* Optional: Add a border */
 }
 
