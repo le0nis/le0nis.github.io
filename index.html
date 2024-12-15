@@ -6,58 +6,72 @@
     <title>Leon McGroarty</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/aa74bfd2e5.js" crossorigin="anonymous"></script>
+    <script>
+        function checkPassword() {
+            var password = prompt("Please enter the password:");
+            if (password !== "LeonMcG22") {
+                alert("Incorrect password!");
+                document.body.innerHTML = ""; // Clear the page content
+            } else {
+                document.getElementById("main-content").style.display = "block"; // Show the main content
+            }
+        }
+        window.onload = checkPassword;
+    </script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Leon McGroarty</h1>
-            <nav class="contact-nav">
-                <a href="mailto:Leon.fz.mcg@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://www.linkedin.com/in/leonmcgroarty" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://t.me/l30nis" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
-                <a href="https://www.instagram.com/le0nis_" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="recent-reads.html" target="_blank"><i class="fas fa-book"></i> Recent Reads</a>
-            </nav>
-        </header>
+    <div id="main-content" style="display:none;">
+        <div class="container">
+            <header>
+                <h1>Leon McGroarty</h1>
+                <nav class="contact-nav">
+                    <a href="mailto:Leon.fz.mcg@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://www.linkedin.com/in/leonmcgroarty" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://t.me/l30nis" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
+                    <a href="https://www.instagram.com/le0nis_" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="recent-reads.html" target="_blank"><i class="fas fa-book"></i> Recent Reads</a>
+                </nav>
+            </header>
 
-        <!-- Moved profile image section here -->
-        <section id="profile-image-section" class="profile-image-section">
-            <div class="profile-image">
-                <img src="profile.png" alt="Leon McGroarty">
-            </div>
-        </section>
+            <!-- Moved profile image section here -->
+            <section id="profile-image-section" class="profile-image-section">
+                <div class="profile-image">
+                    <img src="profile.png" alt="Leon McGroarty">
+                </div>
+            </section>
 
-        <section id="hero" class="hero-section">
-            <div class="hero-text">
-                <h2>Welcome to My Personal Space</h2>
-                <p>I'm Leon McGroarty, an FP&A Analyst with a passion for startups, data, and finance. Explore my thoughts, projects, and career journey.</p>
-                <a href="resume.html" class="btn">View My Resume</a>
-            </div>
-        </section>
+            <section id="hero" class="hero-section">
+                <div class="hero-text">
+                    <h2>Welcome to My Personal Space</h2>
+                    <p>I'm Leon McGroarty, a Finance Projects Manager with a passion for startups, data, and all things disruptive tech. Explore my thoughts, projects, and career journey.</p>
+                    <a href="resume.html" class="btn">View My Resume</a>
+                </div>
+            </section>
 
-        <section id="about" class="about-section">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Hello, I'm Leon. I have built this website to collate my thoughts and writings on things in one place. Enjoy!</p>
-            </div>
-        </section>
+            <section id="about" class="about-section">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hello, I'm Leon. I have built this website to collate my thoughts and writings on things in one place. Enjoy!</p>
+                </div>
+            </section>
 
-        <section id="portfolio" class="portfolio-section">
-            <h2>Portfolio</h2>
-            <p>Check out some of my projects:</p>
-            <!-- Portfolio items -->
-        </section>
+            <section id="portfolio" class="portfolio-section">
+                <h2>Portfolio</h2>
+                <p>Check out some of my projects:</p>
+                <!-- Portfolio items -->
+            </section>
 
-        <section id="blog" class="blog-section">
-            <h2>Blog</h2>
-            <p>Read my latest articles:</p>
-            <!-- Blog articles -->
-        </section>
+            <section id="blog" class="blog-section">
+                <h2>Blog</h2>
+                <p>Read my latest articles:</p>
+                <!-- Blog articles -->
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Leon McGroarty. All rights reserved.</p>
+        </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Leon McGroarty. All rights reserved.</p>
-    </footer>
 </body>
 </html>
 
